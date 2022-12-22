@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Extra code to make sure the radio buttons work properly -->
+<script type="text/javascript">
+    function yesnoCheck() {
+        if (document.getElementById('other').checked) {
+            document.getElementById('school').style.visibility = 'visible';
+        } else {
+            document.getElementById('jobOffer').style.visibility = 'hidden';
+        }
+    }   
+</script>
+
+<body>
+    <main>
+        <header>
+            <nav>
+                <div class="nav-menu">
+                    <ul>
+                        <li class="navButton"><a class="divLink" href="#Intro"><strong>Home</strong></a></li>
+                        <li class="navButton"><a class="divLink" href="#education"><strong>Education</strong></a>
+                        </li>
+                        <li class="navButton"><a class="divLink" href="#skills"><strong>Skills</strong></a></li>
+                        <li class="navButton"><a class="divLink" href="#contactMe"><strong>Contact Me</strong></a>
+                        </li>
+                        <li class="navButton"><a class="divLink" href="#aboutMe"><strong>About Me</strong></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <hr>
+
+        <section class="Intro" id="Intro">
+            <div class="introFaisal">
+                <div class="Image">
+                    <a href="index.html"><img src="Image.jpeg" alt="image"></a>
+                </div>
+                <div class="Faisal">
+                    <h2>Faisal A Mohammed Abdulateef</h2>
+                    <p><strong>Software Enginner. Web Developer.</strong></p>
+                </div>
+
+                <div>
+                    <a download="Resume.pdf" href="Resume.pdf"><button class="Buttons"><i
+                                class="fa fa-download"></i><strong> Resume</strong></button></a>
+                    <a href="#contactMe"><button class="Buttons"><strong>Contact Me</strong></button></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutMe" id="aboutMe">
+            <h2 class="aboutHeading">About Me</h2>
+            <div class="aboutMe-HonestyInfo">
+                <div class="academicHonesty">
+                    <span class="aboutMeTitle">About Me</span>
+                    <p>I'm Faisal and I was born in Iraq. I later lived in the Sultanate of Oman among the huge mountains
+                        and sunny landscape. I always liked biology and other similar sciences but I never realized that I 
+                        had a passion for programming.
+                        <br><br>I started studying in Canada in April of 2022, and I've been loving it so far! I love programming,
+                        and I'm very excited to learn more!</p>
+                </div>
+
+                <div class="BasicInfo">
+                    <span class="aboutMeTitle">Basic Information</span>
+                    <pre><strong>AGE:</strong>          19</pre>
+                    <pre><strong>EMAIL:</strong>        faisalabdulsattar.fa6@gmail.com</pre>
+                    <pre><strong>LANGUAGE:</strong>     English, Arabic</pre>
+                </div>
+            </div>
+        </section>
+
+        <section class="education" id="education">
+            <h2 class="educationHeading">Education</h2>
+            <div class="educationDiv">
+                <div class="institutions">
+                    <h2>Madinat Al-Sultan Qaboos High School</h2>
+                    <p>Graduated in July 2021</p>
+                </div>
+                <br>
+                <div class="institutions">
+                    <h2>Advanced Diploma in Computer Programming and Analysis<br><br>Seneca College</h2>
+                    <p>May 2022 - December 2024 (expected)</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="skillsClass" id="skills">
+            <h2 class="skillsHeading">Skills</h2>
+            <div class="skillsLanguages">
+                <div class="favorite">
+                    <span class="skillsTitle">Favorite Programming/Markup Languages:</span>
+                    <p>My favorite programming languages are the following; <strong>C</strong>,
+                        <strong>C++</strong>,
+                        and <strong>JavaScript</strong>. The markup languages that I like the most are
+                        <strong>SQL</strong> and
+                        <strong>CSS</strong>. I have written 2000 lines of code in <strong>C</strong> and 3500 lines
+                        in <strong>C++</strong>, and
+                        that's mainly why I love these languages so much. I also started writing
+                        <strong>JavaScript</strong> code a few months ago,
+                        cumulating 1000 lines of code, and I'm also loving it since it's similar to
+                        <strong>C++</strong> in certain areas, but not all.<br><br>
+                        My favorite markup languages are <strong>SQL</strong> and <strong>CSS</strong>. I haven't
+                        gotten used to <strong>SQL</strong> a lot but
+                        so far I have written 500 lines of code, and I am getting better gradually. It is also
+                        sparking an interest in Data Engineering that I didn't
+                        have before. Moving on to <strong>CSS</strong>, I can confidently say that I'm pretty good at
+                        it, and it is also why I love building websites so much!
+                    </p>
+                </div>
+
+                <div class="toLearn">
+                    <span class="skillsTitle"><br>Programming Languages Hoping to Learn:</span>
+                    <p>I am currently trying to learn Python and Java, and I have been making decent progress. I
+                        think
+                        that Python is one of the best technologies used for Machine Learning and AI, and it has
+                        been getting
+                        better and faster as a programming language throughout the years. That is why I am
+                        interested in learning
+                        it. <br><br>
+                        Java on the other hand, is another Object-Oriented Programming Language, and learning it
+                        will definitely make
+                        me better at Object-Oriented principles, and those skills that I would have learned would
+                        carry over to other
+                        languages and similar technologies.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactMe" id="contactMe">
+            <h2 class="contactHeading">Contact Me</h2>
+            <div>
+                <form action="https://httpbin.org/post" class="contactForm" id="contactForm" method="POST">
+
+                    <label for="name">Name:</label>
+                    <input class="name format" placeholder="Full Name" type="text" id="name" name="Name">
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="Email" id="email" placeholder="Email Address" class="email format">
+
+                    <label for="address">Street Address:</label>
+                    <textarea name="Street Address" id="address" cols="30" rows="2" placeholder="Address"
+                        class="address"></textarea>
+
+                    <label for="name">City:</label>
+                    <input class="format" type="text" id="city" name="City" list="suggestions"
+                        placeholder="Enter your City" />
+                    <datalist id="suggestions">
+                        <option label="Abbotsford" value="Abbotsford"></option>
+                        <option label="Armstrong" value="Armstrong"></option>
+                        <option label="Burnaby" value="Burnaby"></option>
+                        <option label="Calgary" value="Calgary"></option>
+                        <option label="Castlegar" value="Castlegar"></option>
+                        <option label="Chibougamau" value="Chibougamau"></option>
+                        <option label="Chilliwack" value="Chilliwack"></option>
+                        <option label="Cold Lake" value="Cold Lake"></option>
+                        <option label="Dorval" value="Dorval"></option>
+                        <option label="Edmonton" value="Edmonton"></option>
+                        <option label="Fernie" value="Fernie"></option>
+                        <option label="Flin Flon" value="Flin Flon"></option>
+                        <option label="Greenwood" value="Greenwood"></option>
+                        <option label="Ottawa" value="Ottawa"></option>
+                        <option label="Miramichi" value="Miramichi"></option>
+                        <option label="Montreal" value="Montreal"></option>
+                        <option label="Richmond" value="Richmond"></option>
+                        <option label="Scarborough" value="Scarborough"></option>
+                        <option label="Surrey" value="Surrey"></option>
+                        <option label="St. John's" value="St. John's"></option>
+                        <option label="Toronto" value="Toronto"></option>
+                        <option label="Vancouver" value="Vancouver"></option>
+                        <option label="Whitehorse" value="Whitehorse"></option>
+                        <option label="White Rock" value="White Rock"></option>
+                        <option label="Yellowknife" value="Yellowknife"></option>
+                    </datalist>
+
+                    <label for="Province">Province:</label>
+                    <input type="text" name="Province" id="Province" placeholder="Province" class="address format">
+
+                    <label for="Postal Code">Postal Code:</label>
+                    <input name="Postal Code" type="text" id="Postal Code" class="format" placeholder="Postal Code">
+
+                    <br>
+                    <div class="contactButtons">
+                        <label for="purpose">Why Contact Me?</label><br><br>
+
+                        <input type="radio" id="jobOffer" name="button" value="question">
+                        <label for="jobOffer">Job Offer</label><br><br>
+
+                        <input type="radio" id="school" name="button" value="comment">
+                        <label for="school">School</label><br><br>
+
+                        <input type="radio" name="button" value="other" id="other">
+                        <label for="other">Other</label><br>
+                    </div>
+                    <br>
+
+                    <label for="field">What is your favorite programming language?</label>
+                    <select class="format">
+                        <optgroup id="opt" name="" form="select">
+                            <option></option>
+                            <option>C</option>
+                            <option>C++</option>
+                            <option>C#</option>
+                            <option>Python</option>
+                            <option>JavaScript</option>
+                            <option>Java</option>
+                            <option>Rust</option>
+                            <option>Other</option>
+                        </optgroup>
+                    </select>
+
+                    <label for="message">Input Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message"
+                        class="address"></textarea>
+
+                    <div>
+                        <input type="submit" class="Buttons" value="Send">
+                        <input type="reset" class="Buttons" value="Reset">
+                    </div>
+
+                    <div class="reEnterInfo" id="reEnterInfo">
+
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="extraInfo">
+        <h4><strong>LOCATION</strong></h4>
+        <p>1760 Finch Ave E<br>
+            Ontario, M2J 5G3</p>
+
+        <div>
+            <a href="https://www.linkedin.com/in/faisal-abdulateef-122aa822a/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/FaisalAbdulateef" class="fa fa-github"></a>
+        </div>
+    </footer>
+
+    <script src="validation.js"></script>
+</body>
+
+</html>
